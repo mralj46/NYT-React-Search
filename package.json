@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"nodemon server.js\" \"cd client && yarn start\""
+    "start": "concurrently \"nodemon server.js\" \"cd client && yarn start\"",
+    "build": "node scripts/build.js",
+    "installDeps": "yarn && cd client && yarn"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,7 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
-    "concurrently": "^3.6.0"
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.12.1"
   }
 }
