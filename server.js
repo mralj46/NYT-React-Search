@@ -33,7 +33,6 @@ var router = new express.Router();
 // Define any API routes first
 // Get saved articles
 router.get("/api/saved", function(req, res){
-    console.log('we hit the get for saved on page load');
     articlesController.find(req, res);
 });
 // Save articles
